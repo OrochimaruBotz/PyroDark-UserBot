@@ -17,7 +17,7 @@ from ProjectPyrodark import BOTLOG_CHATID, LOGGER, LOOP, bots
 from ProjectPyrodark.helpers.misc import git, heroku
 
 MSG_ON = """
-🔥 **PYRODARK-USERBOT Berhasil Di Aktifkan**
+😈 **PyroDark-UserBot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk mengecek Bot**
@@ -45,6 +45,6 @@ if __name__ == "__main__":
     git()
     heroku()
     LOGGER("ProjectPyrodark").info(
-        f"PYRODARK-USERBOT v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]"
+        f"PYRODARK-USERBOT v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]"
     )
     LOOP.run_until_complete(main())
