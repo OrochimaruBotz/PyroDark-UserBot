@@ -26,7 +26,6 @@ MSG_ON = """
 
 
 async def main():
-        importlib.import_module(f"ProjectPyrodark.modules.{all_module}")
     for bot in bots:
         try:
             await bot.start()
