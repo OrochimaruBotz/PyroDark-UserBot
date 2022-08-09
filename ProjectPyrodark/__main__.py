@@ -5,16 +5,14 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/mrismanaziz/PyroMan-Userbot/blob/main/LICENSE/>.
 #
-# t.me/darkosupport & t.me/lyoc0de
-
-import importlib
+# t.me/darkosupport & t.me/Lyoc0de
 
 from pyrogram import idle
 from uvloop import install
 
 from config import BOT_VER, CMD_HANDLER
 from ProjectPyrodark import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bots
-from ProjectPyrodark.helpers.misc import heroku
+from ProjectPyrodark.helpers.misc import git, heroku
 
 MSG_ON = """
 😈 **PyroDark-UserBot Berhasil Di Aktifkan**
@@ -30,23 +28,20 @@ async def main():
         try:
             await bot.start()
             bot.me = await bot.get_me()
-            await bot.join_chat("lyoc0de")
-            await bot.join_chat("darkosupport")
+            await bot.join_chat("Lunatic0de")
+            await bot.join_chat("SharingUserbot")
             await bot.send_message(BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER))
-            LOGGER("ProjectPyrodark").info(
-                f"Logged in as {bot.me.first_name} | [ {bot.me.id} ]"
-            )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("ProjectPyrodark").info(
-        f"PyroDark-UserBot v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]"
-    )
     await idle()
     await aiosession.close()
 
 
 if __name__ == "__main__":
     LOGGER("ProjectPyrodark").info("Starting PyroDark-UserBot")
+    LOGGER("ProjectPyrodark").info(f"Total Clients = {len(bots)} Users")
     install()
+    git()
     heroku()
+    LOGGER("ProjectPyrodark").info(f"PyroDark-UserBot v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]")
     LOOP.run_until_complete(main())
