@@ -16,8 +16,8 @@ import heroku3
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-from config import *
-from ProjectPyrodark import LOGGER
+from config import BRANCH, GIT_TOKEN, HEROKU_API_KEY, HEROKU_APP_NAME, REPO_URL
+from ProjectDark import LOGGER
 
 HAPP = None
 
@@ -110,7 +110,8 @@ def heroku():
                 Heroku = heroku3.from_key(HEROKU_API_KEY)
                 HAPP = Heroku.app(HEROKU_APP_NAME)
                 LOGGER("ProjectPyrodark").info(f"Heroku App Configured")
-            except BaseException:
-                LOGGER("ProjectPyrodark").warning(
+            except BaseException as e:
+                LOGGER("Heroku").error(e)
+                LOGGER("Heroku").info(
                     f"Pastikan HEROKU_API_KEY dan HEROKU_APP_NAME anda dikonfigurasi dengan benar di config vars heroku."
                 )
