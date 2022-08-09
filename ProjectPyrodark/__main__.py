@@ -45,6 +45,6 @@ if __name__ == "__main__":
     git()
     heroku()
     LOGGER("ProjectPyrodark").info(
-        f"PYRODARK-USERBOT v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]"
+        f"PyroDark-UserBot v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]"
     )
     LOOP.run_until_complete(main())
