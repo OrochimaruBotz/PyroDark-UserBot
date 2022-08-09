@@ -15,7 +15,6 @@ from uvloop import install
 from config import BOT_VER, CMD_HANDLER
 from ProjectPyrodark import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bots
 from ProjectPyrodark.helpers.misc import heroku
-from ProjectPyrodark.modules import ALL_MODULES
 
 MSG_ON = """
 😈 **PyroDark-UserBot Berhasil Di Aktifkan**
