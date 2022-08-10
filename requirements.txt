@@ -36,4 +36,4 @@ uvloop
 wget==3.2
 yourls
 youtube-search-python
-yt-dlp
+yt-dlp==2021.11.10.1
