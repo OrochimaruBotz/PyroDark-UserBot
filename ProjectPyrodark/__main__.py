@@ -15,7 +15,7 @@ from ProjectPyrodark import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bots
 from ProjectPyrodark.helpers.misc import git, heroku
 
 MSG_ON = """
-😈 **PyroDark-UserBot Berhasil Di Aktifkan**
+😈 **Gojo-UserBot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecek Bot**
@@ -38,10 +38,10 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ProjectPyrodark").info("Starting PyroDark-UserBot")
+    LOGGER("ProjectPyrodark").info("Starting Gojo-UserBot")
     LOGGER("ProjectPyrodark").info(f"Total Clients = {len(bots)} Users")
     install()
     git()
     heroku()
-    LOGGER("ProjectPyrodark").info(f"PyroDark-UserBot v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]")
+    LOGGER("ProjectPyrodark").info(f"Gojo-UserBot v{BOT_VER} [😈 BERHASIL DIAKTIFKAN! 😈]")
     LOOP.run_until_complete(main())
