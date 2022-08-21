@@ -1,6 +1,6 @@
 {
-  "name": "PyroDark-UserBot",
-  "description": "[PyroDark-UserBot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
+  "name": "Gojo-UserBot",
+  "description": "[Gojo-UserBot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.",
   "stack": "heroku-22",
   "env": {
     "API_ID": {
