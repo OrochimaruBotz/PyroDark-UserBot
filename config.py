@@ -17,7 +17,7 @@ load_dotenv("config.env")
 
 
 ALIVE_EMOJI = getenv("ALIVE_EMOJI", "✾")
-ALIVE_LOGO = getenv("ALIVE_LOGO", "https://telegra.ph/file/100cfc6fa1e38bad39f47.jpg")
+ALIVE_LOGO = getenv("ALIVE_LOGO", "https://telegra.ph/file/155909b7aa9ed8149664d.jpg")
 ALIVE_TEKS_CUSTOM = getenv("ALIVE_TEKS_CUSTOM", "I am alive at your service.")
 API_HASH = getenv("API_HASH")
 API_ID = int(getenv("API_ID", ""))
@@ -33,7 +33,7 @@ GIT_TOKEN = getenv(
         "utf-8"
     ),
 )
-GROUP = getenv("GROUP", "darkosupport")
+GROUP = getenv("GROUP", "StorinimeID🇮🇩")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
